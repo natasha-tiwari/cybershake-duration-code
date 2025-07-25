@@ -129,10 +129,6 @@ def main():
     doc_content = """CYBERSHAKE FAULT GEOMETRY DATA DOCUMENTATION
 ===========================================
 
-Data Source: CyberShake Ruptures Table
-ERF Version: UCERF2 (ERF_ID = 35)
-Query Date: 2025-01-25
-
 AVAILABLE PARAMETERS:
 --------------------
 1. Fault_ID: Unique fault identifier (Source_ID from database)
@@ -164,22 +160,6 @@ EXPLANATION OF FAULT_ID CONNECTION:
 - Fault names follow the pattern: "FaultSystem;Segments"
   Example: "San Andreas;CO+CC+BB+NB+SS+BG+CH" 
   Where CO, CC, etc. are segment abbreviations
-
-TO OBTAIN COMPLETE UCERF2 PARAMETERS:
-------------------------------------
-The complete UCERF2 fault parameters (dip, rake, width, etc.) are available from:
-
-1. SCEC UCERF2 Documentation:
-   https://www.wgcep.org/UCERF2/
-
-2. OpenSHA UCERF2 Source Files:
-   https://github.com/opensha/opensha-commons/tree/master/src/resources/data/erf/ucerf2
-
-3. USGS Earthquake Hazards Program:
-   https://earthquake.usgs.gov/data/ucerf/
-
-These external sources contain the full 3D fault geometry that CyberShake uses
-internally but does not store in its publicly accessible database.
 
 NOTES:
 ------
